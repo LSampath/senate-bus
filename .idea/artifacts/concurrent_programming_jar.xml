@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="concurrent-programming:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/concurrent_programming_jar</output-path>
+    <root id="archive" name="concurrent-programming.jar">
+      <element id="module-output" name="concurrent-programming" />
+    </root>
+  </artifact>
+</component>
