@@ -18,7 +18,7 @@ public class Bus implements Runnable {
         synchronized (resources.lock) {
             riders = Math.min(resources.waiting, 50);
 
-            for (int i=0; i<riders; i++) {
+            for (int i = 0; i < riders; i++) {
                 try {
                     resources.bus.release();
                     resources.boarded.acquire();
@@ -27,7 +27,7 @@ public class Bus implements Runnable {
                 }
             }
 
-            left = Math.max(resources.waiting-50, 0);
+            left = Math.max(resources.waiting - 50, 0);
             resources.waiting = left;
         }
 
